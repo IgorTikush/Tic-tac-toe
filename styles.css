@@ -1,0 +1,61 @@
+html {
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.playerField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.board {
+    display: flex;
+    width: 430px;
+    height: 430px;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    background-color: #ffffff;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+#startGameButton {
+    margin-top: 1rem;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#gameResult {
+    margin-top: 1rem;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
+    font-size: 2rem;
+
+}
+
+.field {
+    flex: 0 0 calc((100% / 3) - 0.28rem);
+    height: 33%;
+    background-color: black;
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    cursor: pointer;
+}
